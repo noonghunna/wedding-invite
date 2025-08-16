@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wasif & Samra — Wedding Invitation</title>
+  <meta name="theme-color" content="#1a2e2a" />
+  <meta name="description" content="Join us for the Nikah of Wasif & Samra on 6 September 2025 in Lahore. Sehra Bandi 5:00 PM, Barat Departure 6:30 PM, Nikah 8:00 PM." />
+  <link rel="canonical" href="https://example.com/wedding-invitation" />
+  <!-- Open Graph for rich previews (e.g., WhatsApp) -->
+  <meta property="og:title" content="Wasif & Samra — Nikah Invitation (6 Sep 2025)" />
+  <meta property="og:description" content="Nikah at 8:00 PM • Varioline Le Grand Hall, Garrison Golf & Country Club, Lahore. Tap for details, route and RSVP." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/wedding-invitation" />
+  <meta property="og:site_name" content="Wasif & Samra Wedding" />
+  <meta property="og:image" content="https://images.pexels.com/photos/12689014/pexels-photo-12689014.jpeg?w=1200&h=630&fit=crop" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Elegant emerald and gold wedding background" />
+  <meta property="og:locale" content="en_PK" />
+  <!-- Twitter Card as fallback -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wasif & Samra — Nikah Invitation (6 Sep 2025)" />
+  <meta name="twitter:description" content="Nikah at 8:00 PM • Varioline Le Grand Hall, Lahore." />
+  <meta name="twitter:image" content="https://images.pexels.com/photos/12689014/pexels-photo-12689014.jpeg?w=1200&h=630&fit=crop" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;600&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root{
+      --bg-dark:#1a2e2a;
+      --bg-mid:#2c4c46;
+      --bg-soft:#f0e9db;
+      --gold:#b8860b;
+      --gold-soft:#d4af37;
+      --ivory:#f7f4ed;
+      --emerald:#0f766e;
+      --bg-overlay: rgba(0,0,0,.35);
+      --shadow: 0 20px 60px rgba(0,0,0,.45);
+    }
+
+    /* Global reset */
+    *{
+      box-sizing:border-box
+    }
+    html,body{
+      height:100%
+    }
+    body{
+      margin:0; color:var(--ivory); background: var(--bg-dark);
+      font-family: 'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji",sans-serif;
+      line-height:1.6;
+      background-image: linear-gradient(0deg, var(--bg-overlay), var(--bg-overlay)), url('https://images.pexels.com/photos/12689014/pexels-photo-12689014.jpeg?cs=srgb&dl=pexels-vidalbalielojrfotografia-12689014.jpg&fm=jpg&w=1920&h=1280&_gl=1*4cwng6*_ga*MTgwNjg4NDE1OC4xNzU1MzAwOTEz*_ga_8JE65Q40S6*czE3NTUzMDA5MTIkbzEkZzEkdDE3NTUzMDEzMjkkajI5JGwwJGgw');
+      background-size: cover, cover;
+      background-position: center, center;
+      background-attachment: fixed, fixed;
+    }
+    /* Optional stronger/softer overlay controls (unused by default) */
+    body.overlay-strong{ --bg-overlay: rgba(0,0,0,.48) }
+    body.overlay-soft{ --bg-overlay: rgba(0,0,0,.22) }
+    @media (max-width: 480px){
+      body{ font-size:17px; line-height:1.7 }
+    }
+
+    a{
+      color:var(--gold); text-decoration:none
+    }
+    a:hover{
+      text-decoration:underline
+    }
+
+    /* Mughal card */
+    .wrap{
+      max-width:980px; margin-inline:auto; padding:18px; position:relative; z-index:1
+    }
+
+    .card{
+      position:relative; padding:min(6vw,64px); 
+      background: rgba(26, 46, 42, 0.90);
+      border: 2px solid var(--gold);
+      border-radius: 26px; box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    header{
+      text-align:center; margin-bottom: 22px; position:relative;
+    }
+    .bismillah{
+      font-family: 'Noto Naskh Arabic', serif; font-size: clamp(18px, 2.4vw, 28px); letter-spacing:.5px; color:var(--gold-soft);
+    }
+    .headline{
+      font-family:'Playfair Display', serif; font-weight:700; font-size:clamp(26px, 4.2vw, 46px); margin:.6rem 0 0; text-transform:uppercase; letter-spacing:.04em; color:var(--gold);
+    }
+    .sub{
+      font-family:'Montserrat', sans-serif; font-size:clamp(18px, 2.4vw, 26px); color:var(--ivory); opacity:.92
+    }
+
+    /* Names with gold shimmer */
+    .names{
+      font-family:'Playfair Display', serif; font-weight:600; font-size:clamp(28px, 4.5vw, 56px); margin:18px 0 8px; background: linear-gradient(100deg, var(--gold) 0, #fff7cc 20%, var(--gold) 40%, var(--gold) 100%); -webkit-background-clip:text; background-clip:text; color:transparent; animation: shine 5.5s linear infinite; background-size: 200% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .name {
+      white-space: nowrap;
+    }
+    .ampersand {
+      font-size: clamp(24px, 4vw, 48px);
+      line-height: 1;
+    }
+    @keyframes shine{
+      to{
+        background-position: 200% 0;
+      }
+    }
+
+    .date{
+      font-family:'Playfair Display',serif; letter-spacing:.1em; color:var(--gold-soft); font-size:clamp(14px, 1.4vw, 18px)
+    }
+
+    /* Poetic line */
+    .poem{
+      margin: 10px auto 18px; max-width: 720px; font-style: italic; opacity:.95
+    }
+
+    /* Timeline */
+    .timeline{
+      display:grid; gap:18px; margin: 36px 0
+    }
+    @media (min-width:780px){
+      .timeline{
+        grid-template-columns: repeat(2,1fr)
+      }
+    }
+
+    .tile{
+      background: rgba(255, 255, 255, 0.05); border:1px solid rgba(214,179,90,.35); border-radius:18px; padding:18px 16px; position:relative; overflow:hidden;
+      transform: translateY(50px);
+      opacity: 0;
+      transition: all 0.5s ease-out;
+    }
+    .tile.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .tile h3{
+      margin:0 0 6px; font-family:'Playfair Display',serif; color:var(--gold); letter-spacing:.02em
+    }
+    .tile p{
+      margin:.25rem 0;
+    }
+    .card p{ max-width:65ch }
+    .tile p a{ color: var(--ivory); word-break: break-word; overflow-wrap: anywhere }
+    .tile p a:hover{ color: var(--gold-soft) }
+    .tile-head{ display:flex; align-items:center; gap:10px; margin-bottom:6px }
+    .tile-head h3{ margin:0; flex:1 1 auto; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+    .tile .when{ margin-left:auto; font-weight:600; color: var(--gold); white-space:nowrap; border:1px solid rgba(212,179,55,.55); background:rgba(212,179,55,.08); padding:2px 10px; border-radius:999px; font-size:.95em }
+    .tile .when time{ font-variant-numeric: lining-nums tabular-nums; letter-spacing:.02em }
+
+    .tile .icon{
+      width:34px; height:34px; display:inline-block; vertical-align:middle; margin-right:8px; opacity:.95; color: var(--gold)
+    }
+    .tile .icon *{ stroke-width:1.6 }
+    .tile .cta{
+      margin-top:8px; display:inline-block; padding:.5rem .9rem; border:1px solid var(--gold); border-radius:999px; color:var(--gold); font-weight:600
+    }
+    .tile .cta:hover{
+      background:rgba(214,179,90,.1);
+    }
+
+    /* Dua section */
+    .dua{
+      margin: 8px 0 4px; text-align:center
+    }
+    .dua .ayah{
+      font-family:'Noto Naskh Arabic',serif; font-size:clamp(18px, 2.4vw, 26px)
+    }
+    .dua .tr{
+      opacity:.9
+    }
+
+    /* Action row */
+    .actions{
+      display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin: 26px 0 4px
+    }
+    .btn{
+      appearance:none; border:1px solid var(--gold); color:var(--bg-dark); background:linear-gradient(180deg,#ffeaa6,#d6b35a); font-weight:700; border-radius:999px; padding:.7rem 1.2rem; min-height:44px; cursor:pointer; box-shadow: 0 6px 20px rgba(0,0,0,.25);
+    }
+    .btn:hover{
+      filter:saturate(1.1) brightness(1.02)
+    }
+    .btn:active{ transform: translateY(1px); filter: brightness(.98) }
+    .btn:focus-visible{ outline:none; box-shadow: 0 0 0 3px rgba(255,255,255,.3), 0 0 0 5px rgba(212,179,55,.55) }
+
+    footer{
+      margin:24px 0 6px; text-align:center; font-size:1rem
+    }
+    footer p{
+      display:inline-block; margin:0; padding:8px 12px; background: rgba(26,46,42,.88);
+      border:1px solid rgba(214,179,90,.25); border-radius:12px; box-shadow: 0 6px 20px rgba(0,0,0,.2);
+      color: var(--ivory); text-shadow: 0 1px 1px rgba(0,0,0,.5)
+    }
+
+    /* Reveal on scroll */
+    .reveal{
+      opacity:0; transform: translateY(12px); transition: all .7s ease
+    }
+    .reveal.show{
+      opacity:1; transform:none
+    }
+
+    .pin{
+      width:16px;height:16px;display:inline-block;vertical-align:-3px;margin-right:6px;color:var(--gold)
+    }
+
+    /* RSVP modal */
+    .modal{
+      position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.6); z-index:9999
+    }
+    .modal.show{
+      display:flex
+    }
+    .modal-card{
+      background: var(--bg-mid); border:1px solid rgba(214,179,90,.5); border-radius:20px; padding:24px; width:min(90vw,540px); color:var(--ivory); box-shadow: var(--shadow)
+    }
+    .modal-card h3{
+      margin:0 0 6px; font-family:'Playfair Display',serif; color:var(--gold)
+    }
+    .contacts{
+      list-style:none; padding-left:0
+    }
+    .contacts li{
+      margin:10px 0
+    }
+    .modal-actions{
+      display:flex; justify-content:flex-end; margin-top:12px
+    }
+    .close{
+      background:transparent; border:1px solid var(--gold); color:var(--gold); border-radius:999px; padding:.5rem .9rem; cursor:pointer
+    }
+    .close:focus-visible, .cta:focus-visible, a:focus-visible{ outline:none; box-shadow: 0 0 0 3px rgba(255,255,255,.2), 0 0 0 5px rgba(212,179,55,.45) }
+
+    .contacts li{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap }
+    .contacts .contact-name{ font-weight:600 }
+    .contacts .contact-actions{ margin-left:auto; display:flex; align-items:center; gap:10px }
+    .contacts .tel{ color: var(--ivory) }
+    .contacts .tel:hover{ color: var(--gold-soft) }
+    .contacts .wa{
+      display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; margin-left:2px;
+      background:#25D366; border:none; border-radius:999px; color:#fff; text-decoration:none
+    }
+    .contacts .wa:hover{ filter: brightness(.95) }
+    .contacts .wa:focus-visible{ outline:none; box-shadow: 0 0 0 3px rgba(255,255,255,.2), 0 0 0 5px rgba(37,211,102,.6) }
+    .contacts .wa svg{ width:16px; height:16px; display:block }
+    .departure-tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 200px; /* Ensure enough height for vertical centering */
+    }
+    .cta-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+    /* Ornaments */
+    .orn{ position:absolute; width:22px; height:22px; color: rgba(212,179,55,.6); opacity:.7; pointer-events:none }
+    .orn.tl{ top:10px; left:10px }
+    .orn.tr{ top:10px; right:10px; transform: scaleX(-1) }
+    .orn.bl{ bottom:10px; left:10px; transform: scaleY(-1) }
+    .orn.br{ bottom:10px; right:10px; transform: scale(-1) }
+
+    /* Mobile background fix */
+    @media (max-width: 768px){
+      body{ background-attachment: scroll }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      .reveal{ opacity:1; transform:none; transition:none }
+      .tile{ transform:none; opacity:1; transition:none }
+      .names{ animation: none }
+    }
+
+    /* CTA focus style */
+    .cta{ outline:none }
+    .cta:focus-visible{ box-shadow: 0 0 0 3px rgba(255,255,255,.2), 0 0 0 5px rgba(212,179,55,.45) }
+
+    /* Prevent background scroll when modal open */
+    .no-scroll{ overflow:hidden }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <!-- Subtle corner ornaments -->
+      <svg class="orn tl" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22V6c0-2.2 1.8-4 4-4h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"/></svg>
+      <svg class="orn tr" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22V6c0-2.2 1.8-4 4-4h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"/></svg>
+      <svg class="orn bl" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22V6c0-2.2 1.8-4 4-4h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"/></svg>
+      <svg class="orn br" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22V6c0-2.2 1.8-4 4-4h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"/></svg>
+      <header class="reveal">
+        <div class="bismillah">بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        <div class="sub">You are cordially invited to join us in celebrating the</div>
+        <h1 class="headline">Nikah & Wedding</h1>
+        <div class="names">
+          <span class="name">Wasif Basharat</span>
+          <span class="ampersand">&amp;</span>
+          <span class="name">Samra Arshad</span>
+        </div>
+        <div class="date">6th September 2025</div>
+        <p class="poem">Two hearts, one journey. We request the honor of your presence at our wedding celebration.</p>
+      </header>
+
+      <!-- Timeline tiles (details preserved from your original page) -->
+      <section class="timeline">
+        <article class="tile reveal">
+          <div class="tile-head">
+          <h3>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 10l9-7 9 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 22v-6h4v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Sehra Bandi
+          </h3>
+          <div class="when"><time datetime="2025-09-06T17:00:00+05:00">5:00 PM</time></div>
+          </div>
+          <p>At the Groom's Home</p>
+          <p><svg class="pin" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" fill="currentColor"/></svg><a href="https://maps.app.goo.gl/nGmGqbfaqDZDKhJY6" target="_blank" rel="noopener">770 F2, Wapda Town, Lahore, Pakistan</a></p>
+          <div style="text-align: center; margin-top: 10px;">
+            <a href="https://maps.app.goo.gl/nGmGqbfaqDZDKhJY6" target="_blank" rel="noopener" class="cta">View Location</a>
+          </div>
+        </article>
+
+        <article class="tile reveal departure-tile">
+          <div>
+            <div class="tile-head">
+            <h3>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bus outline -->
+                <rect x="3" y="6" width="18" height="10" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 11.5h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="7" cy="18" r="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="17" cy="18" r="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <!-- Departure arrow -->
+                <path d="M14 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 8h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              Barat Departure
+            </h3>
+            <div class="when"><time datetime="2025-09-06T18:30:00+05:00">6:30 PM</time></div>
+            </div>
+            <p class="hint">Procession departs from Groom's Home</p>
+          </div>
+          <div class="cta-container">
+            <a href="https://www.google.com/maps/dir/?api=1&origin=770+F2,+Wapda+Town,+Lahore,+Pakistan&destination=Varioline+Le+Grand+Hall,+Garrison+Golf+%26+Country+Club,+Lahore,+Pakistan" target="_blank" rel="noopener" class="cta">View Route</a>
+          </div>
+        </article>
+
+        <article class="tile reveal">
+          <div class="tile-head">
+          <h3>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <!-- Mughal dome with arched doorway -->
+              <path d="M3 20h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M5 20V11M19 20V11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M5 11Q12 5 19 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M9 20v-4.5c0-2.6 1.8-4.2 3-5 1.2.8 3 2.4 3 5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Nikah
+          </h3>
+          <div class="when"><time datetime="2025-09-06T20:00:00+05:00">8:00 PM</time></div>
+          </div>
+          <p><svg class="pin" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" fill="currentColor"/></svg><a href="https://maps.app.goo.gl/k59AfWzweBNiLBj38" target="_blank" rel="noopener">Varioline Le Grand Hall, Garrison Golf &amp; Country Club, Lahore, Pakistan</a></p>
+          <div style="text-align: center; margin-top: 10px;">
+            <a href="https://maps.app.goo.gl/k59AfWzweBNiLBj38" target="_blank" rel="noopener" class="cta">View Location</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Blessings / Dua -->
+      <section class="dua reveal">
+        <div class="ayah" lang="ar">وَجَعَلَ بَيْنَكُم مَوَدَّةً وَرَحْمَةً</div>
+        <div class="tr">May Allah place between them affection (<em>mawadda</em>) and mercy (<em>rahma</em>), and fill their home with tranquility (<em>sakinah</em>).</div>
+      </section>
+
+      <section class="actions reveal">
+        <a class="btn" href="#" id="rsvpButton">RSVP</a>
+        <a class="btn" href="#" id="addCalLink">Add Nikah to Calendar</a>
+      </section>
+    </section>
+
+    <footer>
+      <p>With joy, the families of Wasif &amp; Samra welcome your prayers and presence.</p>
+    </footer>
+
+    <!-- RSVP Modal -->
+    <div class="modal" id="rsvpPanel" aria-hidden="true" role="dialog" aria-modal="true" aria-label="RSVP contacts">
+      <div class="modal-card" tabindex="-1">
+        <h3>Groom's Family — RSVP Contacts</h3>
+        <p>Tap a number to call or copy:</p>
+        <ul class="contacts">
+          <li>
+            <span class="contact-name"><strong>Wasif Bashrat (Groom)</strong></span>
+            <span class="contact-actions">
+              <a class="tel" href="tel:+923326743477">+92 332 6743477</a>
+              <a class="wa" href="https://wa.me/923326743477" target="_blank" rel="noopener" aria-label="WhatsApp Wasif">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <circle cx="16" cy="16" r="16" fill="#25D366"/>
+                  <path fill="#FFFFFF" d="M19.11 17.21c-.32-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.72.16-.21.32-.83 1.02-1.02 1.23-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.59-.96-.86-1.6-1.92-1.79-2.24-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.72-1.73-.99-2.37-.26-.63-.53-.55-.72-.56l-.62-.01c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.37.16.22 2.3 3.51 5.56 4.93.78.34 1.39.54 1.87.69.79.25 1.5.21 2.07.13.63-.09 1.86-.76 2.12-1.49.26-.73.26-1.35.18-1.49-.08-.14-.29-.22-.61-.38z"/>
+                  <path fill="#FFFFFF" d="M15.99 5.33c-5.85 0-10.6 4.76-10.6 10.62 0 1.87.49 3.61 1.36 5.12L5 27l6.09-1.6c1.48.81 3.17 1.27 4.9 1.27 5.85 0 10.6-4.76 10.6-10.62s-4.75-10.62-10.6-10.62zm6.17 16.78c-.26.74-1.5 1.41-2.12 1.49-.59.09-1.32.12-2.07-.13-.48-.15-1.09-.35-1.87-.69-3.27-1.42-5.4-4.7-5.56-4.93-.16-.22-1.33-1.77-1.33-3.37 0-1.6.84-2.39 1.14-2.71.3-.33.65-.41.87-.41l.62.01c.19.01.46-.07.72.56.27.64.91 2.21.99 2.37.08.16.14.35.03.57-.11.22-.16.35-.32.54-.16.19-.34.42-.48.57-.16.16-.33.33-.14.65.19.32.83 1.38 1.79 2.24 1.24 1.09 2.29 1.43 2.6 1.59.32.16.51.14.7-.08.19-.21.81-.91 1.02-1.23.21-.32.43-.27.72-.16.29.11 1.84.86 2.15 1.02.32.16.53.24.61.38.08.14.08.76-.18 1.49z"/>
+                </svg>
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="contact-name"><strong>Aisha Azhar (Sister)</strong></span>
+            <span class="contact-actions">
+              <a class="tel" href="tel:+923334536682">+92 333 4536682</a>
+              <a class="wa" href="https://wa.me/923334536682" target="_blank" rel="noopener" aria-label="WhatsApp Aisha">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <circle cx="16" cy="16" r="16" fill="#25D366"/>
+                  <path fill="#FFFFFF" d="M19.11 17.21c-.32-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.72.16-.21.32-.83 1.02-1.02 1.23-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.59-.96-.86-1.6-1.92-1.79-2.24-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.72-1.73-.99-2.37-.26-.63-.53-.55-.72-.56l-.62-.01c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.37.16.22 2.3 3.51 5.56 4.93.78.34 1.39.54 1.87.69.79.25 1.5.21 2.07.13.63-.09 1.86-.76 2.12-1.49.26-.73.26-1.35.18-1.49-.08-.14-.29-.22-.61-.38z"/>
+                  <path fill="#FFFFFF" d="M15.99 5.33c-5.85 0-10.6 4.76-10.6 10.62 0 1.87.49 3.61 1.36 5.12L5 27l6.09-1.6c1.48.81 3.17 1.27 4.9 1.27 5.85 0 10.6-4.76 10.6-10.62s-4.75-10.62-10.6-10.62zm6.17 16.78c-.26.74-1.5 1.41-2.12 1.49-.59.09-1.32.12-2.07-.13-.48-.15-1.09-.35-1.87-.69-3.27-1.42-5.4-4.7-5.56-4.93-.16-.22-1.33-1.77-1.33-3.37 0-1.6.84-2.39 1.14-2.71.3-.33.65-.41.87-.41l.62.01c.19.01.46-.07.72.56.27.64.91 2.21.99 2.37.08.16.14.35.03.57-.11.22-.16.35-.32.54-.16.19-.34.42-.48.57-.16.16-.33.33-.14.65.19.32.83 1.38 1.79 2.24 1.24 1.09 2.29 1.43 2.6 1.59.32.16.51.14.7-.08.19-.21.81-.91 1.02-1.23.21-.32.43-.27.72-.16.29.11 1.84.86 2.15 1.02.32.16.53.24.61.38.08.14.08.76-.18 1.49z"/>
+                </svg>
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="contact-name"><strong>Ahsan Basharat (Brother)</strong></span>
+            <span class="contact-actions">
+              <a class="tel" href="tel:+447515760175">+44 751 5760175</a>
+              <a class="wa" href="https://wa.me/447515760175" target="_blank" rel="noopener" aria-label="WhatsApp Ahsan">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <circle cx="16" cy="16" r="16" fill="#25D366"/>
+                  <path fill="#FFFFFF" d="M19.11 17.21c-.32-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.72.16-.21.32-.83 1.02-1.02 1.23-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.59-.96-.86-1.6-1.92-1.79-2.24-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.72-1.73-.99-2.37-.26-.63-.53-.55-.72-.56l-.62-.01c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.37.16.22 2.3 3.51 5.56 4.93.78.34 1.39.54 1.87.69.79.25 1.5.21 2.07.13.63-.09 1.86-.76 2.12-1.49.26-.73.26-1.35.18-1.49-.08-.14-.29-.22-.61-.38z"/>
+                  <path fill="#FFFFFF" d="M15.99 5.33c-5.85 0-10.6 4.76-10.6 10.62 0 1.87.49 3.61 1.36 5.12L5 27l6.09-1.6c1.48.81 3.17 1.27 4.9 1.27 5.85 0 10.6-4.76 10.6-10.62s-4.75-10.62-10.6-10.62zm6.17 16.78c-.26.74-1.5 1.41-2.12 1.49-.59.09-1.32.12-2.07-.13-.48-.15-1.09-.35-1.87-.69-3.27-1.42-5.4-4.7-5.56-4.93-.16-.22-1.33-1.77-1.33-3.37 0-1.6.84-2.39 1.14-2.71.3-.33.65-.41.87-.41l.62.01c.19.01.46-.07.72.56.27.64.91 2.21.99 2.37.08.16.14.35.03.57-.11.22-.16.35-.32.54-.16.19-.34.42-.48.57-.16.16-.33.33-.14.65.19.32.83 1.38 1.79 2.24 1.24 1.09 2.29 1.43 2.6 1.59.32.16.51.14.7-.08.19-.21.81-.91 1.02-1.23.21-.32.43-.27.72-.16.29.11 1.84.86 2.15 1.02.32.16.53.24.61.38.08.14.08.76-.18 1.49z"/>
+                </svg>
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="contact-name"><strong>Rabia Malik (Sister)</strong></span>
+            <span class="contact-actions">
+              <a class="tel" href="tel:+447930286225">+44 793 0286225</a>
+              <a class="wa" href="https://wa.me/447930286225" target="_blank" rel="noopener" aria-label="WhatsApp Rabia">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <circle cx="16" cy="16" r="16" fill="#25D366"/>
+                  <path fill="#FFFFFF" d="M19.11 17.21c-.32-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.72.16-.21.32-.83 1.02-1.02 1.23-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.59-.96-.86-1.6-1.92-1.79-2.24-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.72-1.73-.99-2.37-.26-.63-.53-.55-.72-.56l-.62-.01c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.37.16.22 2.3 3.51 5.56 4.93.78.34 1.39.54 1.87.69.79.25 1.5.21 2.07.13.63-.09 1.86-.76 2.12-1.49.26-.73.26-1.35.18-1.49-.08-.14-.29-.22-.61-.38z"/>
+                  <path fill="#FFFFFF" d="M15.99 5.33c-5.85 0-10.6 4.76-10.6 10.62 0 1.87.49 3.61 1.36 5.12L5 27l6.09-1.6c1.48.81 3.17 1.27 4.9 1.27 5.85 0 10.6-4.76 10.6-10.62s-4.75-10.62-10.6-10.62zm6.17 16.78c-.26.74-1.5 1.41-2.12 1.49-.59.09-1.32.12-2.07-.13-.48-.15-1.09-.35-1.87-.69-3.27-1.42-5.4-4.7-5.56-4.93-.16-.22-1.33-1.77-1.33-3.37 0-1.6.84-2.39 1.14-2.71.3-.33.65-.41.87-.41l.62.01c.19.01.46-.07.72.56.27.64.91 2.21.99 2.37.08.16.14.35.03.57-.11.22-.16.35-.32.54-.16.19-.34.42-.48.57-.16.16-.33.33-.14.65.19.32.83 1.38 1.79 2.24 1.24 1.09 2.29 1.43 2.6 1.59.32.16.51.14.7-.08.19-.21.81-.91 1.02-1.23.21-.32.43-.27.72-.16.29.11 1.84.86 2.15 1.02.32.16.53.24.61.38.08.14.08.76-.18 1.49z"/>
+                </svg>
+              </a>
+            </span>
+          </li>
+        </ul>
+        <div class="modal-actions"><button class="close" id="rsvpClose">Close</button></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: .15
+    });
+    document.querySelectorAll('.reveal').forEach(el => {
+      io.observe(el);
+    });
+    document.querySelectorAll('.tile').forEach(el => {
+      io.observe(el);
+    });
+
+    // RSVP modal with focus trap and Escape close
+    const rsvpBtn = document.getElementById('rsvpButton');
+    const rsvpPanel = document.getElementById('rsvpPanel');
+    const rsvpClose = document.getElementById('rsvpClose');
+    const modalCard = rsvpPanel.querySelector('.modal-card');
+    let restoreFocusTo = null;
+    let keydownHandler = null;
+
+    function getFocusable(container){
+      const sel = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+      return Array.from(container.querySelectorAll(sel)).filter(el => el.offsetParent !== null);
+    }
+    function openModal(){
+      restoreFocusTo = document.activeElement;
+      rsvpPanel.classList.add('show');
+      rsvpPanel.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('no-scroll');
+      const f = getFocusable(modalCard);
+      (f[0] || modalCard).focus();
+      keydownHandler = (e) => {
+        if(e.key === 'Escape'){
+          closeModal();
+        } else if(e.key === 'Tab'){
+          const focusables = getFocusable(modalCard);
+          if(focusables.length === 0){ e.preventDefault(); return; }
+          const first = focusables[0];
+          const last = focusables[focusables.length - 1];
+          if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+          else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+        }
+      };
+      document.addEventListener('keydown', keydownHandler);
+    }
+    function closeModal(){
+      rsvpPanel.classList.remove('show');
+      rsvpPanel.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('no-scroll');
+      document.removeEventListener('keydown', keydownHandler);
+      keydownHandler = null;
+      if(restoreFocusTo) restoreFocusTo.focus();
+    }
+    rsvpBtn.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+    rsvpClose.addEventListener('click', () => closeModal());
+    rsvpPanel.addEventListener('click', (e) => { if (e.target === rsvpPanel) closeModal(); });
+
+    // --- iCalendar helpers -------------------------------------------------
+    function pad(n) {
+      return String(n).padStart(2, '0')
+    }
+
+    function toICSTimestampUTC(date) {
+      return (
+        date.getUTCFullYear().toString() +
+        pad(date.getUTCMonth() + 1) +
+        pad(date.getUTCDate()) + 'T' +
+        pad(date.getUTCHours()) +
+        pad(date.getUTCMinutes()) +
+        pad(date.getUTCSeconds()) + 'Z'
+      );
+    }
+
+    // ICS download for Nikah only (UTC times)
+    document.getElementById('addCalLink').addEventListener('click', (e) => {
+      e.preventDefault();
+      const lines = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Wasif-Samra//Wedding//EN',
+        'BEGIN:VEVENT',
+        `UID:${Date.now()}@wasif-samra`,
+        `DTSTAMP:${toICSTimestampUTC(new Date())}`,
+        'SUMMARY:Nikah — Wasif & Samra',
+        'DTSTART:20250906T143000Z',
+        'DTEND:20250906T170000Z',
+        'LOCATION:Varioline Le Grand Hall, Garrison Golf & Country Club, Lahore',
+        'DESCRIPTION:Sehra Bandi 5:30 PM — Departure 6:30 PM — Expected Arrival 7:30 PM — Nikah 8:00 PM — Dinner 9:00 PM — Finish 10:00 PM (PKT).',
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ];
+      // Use \r\n per RFC5545
+      const blob = new Blob([lines.join('\r\n')+'\r\n'], {
+        type: 'text/calendar'
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Wasif-Samra-Nikah.ics';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+  <!-- Structured data to help rich previews/search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Nikah — Wasif & Samra",
+    "startDate": "2025-09-06T20:00:00+05:00",
+    "endDate": "2025-09-06T22:00:00+05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Varioline Le Grand Hall, Garrison Golf & Country Club",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lahore",
+        "addressCountry": "PK"
+      }
+    },
+    "image": [
+      "https://images.pexels.com/photos/12689014/pexels-photo-12689014.jpeg?w=1200&h=630&fit=crop"
+    ],
+    "description": "Nikah ceremony of Wasif & Samra at 8:00 PM (PKT).",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Families of Wasif & Samra"
+    }
+  }
+  </script>
+  
+</body>
+</html>
