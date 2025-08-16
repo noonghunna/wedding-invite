@@ -144,7 +144,7 @@
           <span class="ampersand">&amp;</span>
           <span class="name">Samra Arshad</span>
         </div>
-        <div class="date">Day 2</div>
+        <div class="date">7th September 2025</div>
         <p class="poem">We look forward to sharing our joy with you at the Walima.</p>
       </header>
 
@@ -161,7 +161,7 @@
               </svg>
               Walima Reception &amp; Dinner
             </h3>
-            <div class="when"><time>7:00 PM</time></div>
+            <div class="when"><time datetime="2025-09-07T19:00:00+05:00">7:00 PM</time></div>
           </div>
           <p>Hosted at Encore by Zafar Group, Fusion Hall (1st Floor)</p>
           <p>
@@ -301,15 +301,6 @@
     }
     document.getElementById('addCalLink').addEventListener('click', (e) => {
       e.preventDefault();
-      const input = prompt('Enter Walima start (PKT) as YYYY-MM-DD HH:MM (24h). Example: 2025-09-07 20:00');
-      if(!input) return;
-      const m = input.match(/^(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})$/);
-      if(!m){ alert('Invalid format. Please use YYYY-MM-DD HH:MM'); return; }
-      const [_, y, mo, d, h, mi] = m;
-      const startLocal = new Date(Number(y), Number(mo)-1, Number(d), Number(h), Number(mi), 0);
-      // PKT is UTC+5; create UTC by subtracting 5h
-      const startUTC = new Date(startLocal.getTime() - (5*60*60*1000));
-      const endUTC = new Date(startUTC.getTime() + (2*60*60*1000)); // default 2h
       const lines = [
         'BEGIN:VCALENDAR',
         'VERSION:2.0',
@@ -318,10 +309,10 @@
         `UID:${Date.now()}@wasif-samra`,
         `DTSTAMP:${toICSTimestampUTC(new Date())}`,
         'SUMMARY:Walima — Wasif & Samra',
-        `DTSTART:${toICSTimestampUTC(startUTC)}`,
-        `DTEND:${toICSTimestampUTC(endUTC)}`,
+        'DTSTART:20250907T140000Z',
+        'DTEND:20250907T160000Z',
         'LOCATION:Encore by Zafar Group — Fusion Hall (1st Floor), Pine Ave, Wocland Villas, Lahore, 54000, Pakistan',
-        'DESCRIPTION:Guests Arrival 7:00 PM — Walima Reception & Dinner.',
+        'DESCRIPTION:Walima — Guests Arrival 7:00 PM (PKT); Reception & Dinner.',
         'END:VEVENT',
         'END:VCALENDAR'
       ];
